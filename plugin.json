@@ -1,0 +1,14 @@
+{
+    "id": "nodebb-plugin-topic-viewers",
+    "name": "Konu Görüntüleyenler (Modern UI)",
+    "description": "Facepile tasarımı ve Popup ile görüntüleyenleri listeler.",
+    "url": "https://github.com/senin-kullanici-adin/nodebb-plugin-topic-viewers",
+    "library": "./library.js",
+    "hooks": [
+        { "hook": "static:app.load", "method": "init" },
+        { "hook": "filter:widgets.getWidgets", "method": "defineWidgets" },
+        { "hook": "filter:widget.render:topic-viewers", "method": "renderWidget" }
+    ],
+    "scripts": [ "static/lib/main.js" ],
+    "nbbpm": { "compatibility": "^4.0.0" }
+}

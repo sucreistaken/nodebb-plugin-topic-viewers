@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-plugin-topic-viewers",
+  "version": "1.0.0",
+  "description": "Konuyu en son kimlerin görüntülediğini gösterir.",
+  "main": "library.js",
+  "nbbpm": {
+    "compatibility": "^4.0.0"
+  },
+  "dependencies": {}
+}
